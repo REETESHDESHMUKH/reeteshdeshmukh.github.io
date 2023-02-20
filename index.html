@@ -24,7 +24,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -42,7 +42,7 @@
                                 <label for="confrm1" class="form-label">Confirm Password</label>
                                 <input type="password" class="form-control" id="confrm1">
                             </div>
-                            <button type="submit" class="btn btn-primary" onclick="signup()">Sign up</button>
+                            <button type="submit" class="btn" onclick="signup()">Sign up</button>
                         </form>
                     </div>
                   </div>
@@ -54,7 +54,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">SignIn</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -67,7 +67,7 @@
                               <label for="pass1" class="form-label">Password</label>
                               <input type="password" class="form-control" id="pass1">
                             </div>
-                            <button type="submit" class="btn btn-primary" onclick="signin()">Login</button>
+                            <button type="submit" class="btn" onclick="signin()">Login</button>
                         </form>
                     </div>
                   </div>
@@ -79,7 +79,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create Post</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -96,7 +96,7 @@
                             <label for="blog" class="form-label">Blog Text</label>
                             <input type="text" class="form-control" id="blog" placeholder="Example input placeholder">
                         </div>
-                        <button type="submit" class="btn btn-primary" onclick="createBlog()">Create Blog!</button>
+                        <button type="submit" class="btn" onclick="createBlog()">Create Blog!</button>
                       </form>
                     </div>
                   </div>
@@ -108,7 +108,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Any Query?</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -121,7 +121,7 @@
                                 <label for="query" class="form-label">Query?</label>
                                 <input type="text" class="form-control" id="query" placeholder="Please type your query here!">
                             </div>
-                            <button type="submit" class="btn btn-primary" onclick="q()">Sign up</button>
+                            <button type="submit" class="btn" onclick="q()">Sign up</button>
                         </form>
                     </div>
                   </div>
@@ -132,15 +132,17 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Find Blogs</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <form>
+                        <div class="mb-3">
+                            <label for="titblog" class="form-label">Title</label>
+                            <input type="text" id="titblog" class="form-control" aria-label="First name">
+                        </div>
+                        <button type="submit" class="btn" onclick="findBlog()">Find!!</button>
+                      <form>
                     </div>
                   </div>
                 </div>
@@ -149,24 +151,24 @@
           </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="3000">
             <div class="container">
                 <img src="https://source.unsplash.com/random/1100x700/?city,night" class="d-block w-100" alt="...">
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <div class="container">
                 <img src="https://source.unsplash.com/random/1100x700/?Mountains" class="d-block w-100" alt="...">
             </div>  
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <div class="container">
                 <img src="https://source.unsplash.com/random/1100x700/?nature" class="d-block w-100" alt="...">
             </div>  

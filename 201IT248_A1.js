@@ -1,5 +1,5 @@
-var titles = []
-var curr = ""
+var titles = [];
+var curr = "";
 function signup(){
     let email = document.getElementById('email1').value;
     alert(`user with email : ${email} signed up!!`);
@@ -26,9 +26,11 @@ function q(){
 function findBlog(){
     var title = document.getElementById('titblog').value;
     var ans = 0;
-    for(let i=0;i<titles.length();i++){
-        if(titles[i] == title) ans = 1;
+    var i = 0;
+    for(i=0;i<titles.length;i++){
+        if(titles[i] === title){ ans = 1;}
     }
+    console.log(ans);
     if(ans) alert(`there is one blog titled ${title}`);
     else alert("sorry there is no such email!!");
 }

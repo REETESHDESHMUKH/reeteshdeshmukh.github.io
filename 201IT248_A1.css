@@ -18,3 +18,7 @@ color: white !important;
 cursor : default;
 border-radius:  0.5cm;
 }
+.btn{
+    background-color: #737678 !important;
+    color: white !important;
+}
